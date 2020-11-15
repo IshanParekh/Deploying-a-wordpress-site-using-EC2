@@ -1,20 +1,24 @@
 <?php
-//$name=$_POST['name'];
-//$email=$_POST['email'];
-// $date=$_POST['date'];
-// $phone=$_POST['phone'];
-// $restaurantname=$_POST['restaurantname'];
-// $time=$_POST['time'];
-$name='Ushma';
-$email='uydesai@gmail.com';
-$date='09/10/2020';
-$phone='3158808814';
-$restaurantname='cheesecake';
-$time='9 PM';
+if ( isset($_POST['name']) || isset($_POST['email']) || isset($_POST['date']) || isset($_POST['phone']) || isset($_POST['restaurantname']) || isset($_POST['time']));
+
+$name=$_POST['name'];
+$email=$_POST['email'];
+$date=$_POST['date'];
+$phone=$_POST['phone'];
+$restaurantname=$_POST['restaurantname'];
+$time=$_POST['time'];
+//$name='Ushma';
+//$email='uydesai@gmail.com';
+//$date='09/10/2020';
+//$phone='3158808814';
+//$restaurantname='cheesecake';
+//$time='9 PM';
 $servername = "restaurantdatabase2.cv7tvm1feofj.us-east-1.rds.amazonaws.com";
 $username = "iparekh";
 $password = "qwerty1024";
 $dbname = "restaurant";
+
+
 
 //create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

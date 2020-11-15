@@ -63,7 +63,7 @@
         <div class="u-form u-form-1">
           <!--<form name="form1" method="POST" action="scripts/info.php">-->
           <!--<form action="scripts/form-f032.php" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px" source="customphp">-->
-          <form action="submitt.php" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px" source="customphp">
+       <!--    <form action="submitt.php" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px" source="customphp">
             <div class="u-form-group u-form-name u-form-group-1">
               <label for="name-3791" class="u-form-control-hidden u-label">Name</label>
               <input type="text" placeholder="Name" id="name-3791" name="name" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-1" required="">
@@ -138,12 +138,91 @@
             <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>
             <div class="u-form-send-error u-form-send-message">#FormSendError</div>
             <input type="hidden" value="" name="recaptchaResponse">
-          </form>
-          <form action="submitt.php" method="get">
+          </form> -->
+          <form action="submitt.php" method="POST">
+             <div class="u-form-group u-form-name u-form-group-1">
+              <label for="name-3791" class="u-form-control-hidden u-label">Name</label>
+              <input type="text" placeholder="Name" id="name-3791" name="name" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-1" required="">
+            </div>
+            <div class="u-form-email u-form-group u-form-group-2">
+              <label for="email-3791" class="u-form-control-hidden u-label"></label>
+              <input type="email" placeholder="Email ID" id="email-3791" name="email" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-2" required="required">
+            </div>
+            <div class="u-form-date u-form-group u-form-group-3">
+              <label for="date-1f48" class="u-form-control-hidden u-label">Date</label>
+              <input type="date" placeholder="Select Date" id="date-1f48" name="date" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-3" required="">
+            </div>
+            <div class="u-form-group u-form-phone u-form-group-4">
+              <label for="phone-04af" class="u-form-control-hidden u-label">Phone</label>
+              <input type="tel" name="phone" placeholder="Enter your mobile number" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-4" required="">
+            </div>
+            <div class="u-form-group u-form-select u-form-group-5">
+              <label for="select-f09c" class="u-label">Select Your Restaurant</label>
+              <div class="u-form-select-wrapper">
+                <select id="select-f09c" name="restaurantname" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-5" required="required" size="5">
+                  <option value="Cake and Candy">Cake and Candy</option>
+                  <option value="Pizza House">Pizza House</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+              </div>
+            </div>
+            <div class="u-form-group u-form-message u-form-group-6">
+              <label for="text-b567" class="u-form-control-hidden u-label"></label>
+              <textarea placeholder="PLEASE ENTER YOUR PREFERRED TIME:" id="text-b567" name="time" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-6"></textarea>
+            </div>
+<!-- <div class="u-form-group u-form-name u-form-group-1">
+              <label for="name-3791" class="u-form-control-hidden u-label">Time</label>
+              <input type="text" placeholder="Enter time here" id="name-3791" name="time" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-1" required="">
+            </div>
+ -->
+           <!--  <div class="u-form-group u-form-radiobutton u-form-group-7">
+              <div class="u-form-radio-button-wrapper">
+                <input type="radio" name="radiobutton" value="11 AM" required="required">
+                <label class="u-label" for="radiobutton">11 AM</label>
+                <br>
+                <input type="radio" name="radiobutton" value="12 PM" required="required">
+                <label class="u-label" for="radiobutton">12 PM</label>
+                <br>
+                <input type="radio" name="radiobutton" value="1 PM" required="required">
+                <label class="u-label" for="radiobutton">1 PM</label>
+                <br>
+                <input type="radio" name="radiobutton" value="2 PM" required="required">
+                <label class="u-label" for="radiobutton">2 PM</label>
+                <br>
+                <input type="radio" name="radiobutton" value="3 PM" required="required">
+                <label class="u-label" for="radiobutton">3 PM</label>
+                <br>
+                <input type="radio" name="radiobutton" value="4 PM" required="required">
+                <label class="u-label" for="radiobutton">4 PM</label>
+                <br>
+                <input type="radio" name="radiobutton" value="5 PM" required="required">
+                <label class="u-label" for="radiobutton">5 PM</label>
+                <br>
+                <input type="radio" name="radiobutton" value="6 PM" required="required">
+                <label class="u-label" for="radiobutton">6 PM</label>
+                <br>
+                <input type="radio" name="radiobutton" value="7 PM" required="required">
+                <label class="u-label" for="radiobutton">7 PM</label>
+                <br>
+                <input type="radio" name="radiobutton" value="8 PM" required="required">
+                <label class="u-label" for="radiobutton">8 PM</label>
+                <br>
+                <input type="radio" name="radiobutton" value="9 PM" required="required">
+                <label class="u-label" for="radiobutton">9 PM</label>
+                <br>
+              </div>
+            </div> -->
+            <div class="u-align-left u-form-group u-form-submit u-form-group-8">
+              <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>
+            <div class="u-form-send-error u-form-send-message">#FormSendError</div>
+            <input type="hidden" value="" name="recaptchaResponse">
             <input type="submit" value="Run me now!">
           </form>
         </div>
-        <img src="images/download1.jfif" alt="" class="u-image u-image-default u-image-1" data-image-width="259" data-image-height="194">
+        <img src="images/download1.jfif" alt="" class="u-image u-image-default u-image-1" data-image-width="259" data-image-height="194" object-fit:cover >
       </div>
     </section>
     

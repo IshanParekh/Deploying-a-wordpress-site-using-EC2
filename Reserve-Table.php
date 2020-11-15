@@ -62,7 +62,7 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Reserve your table</h3>
         <div class="u-form u-form-1">
-          <form action="submitt.php" method="POST" name="submit" tyid:class="u-clearfix u-form-custom-backend u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px" source="custom" redirect="true">
+          <form action="submitt.php" method="POST" name="submit" id:class="u-clearfix u-form-custom-backend u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px" source="custom" redirect="true">
             <div class="u-form-group u-form-name u-form-group-1">
               <?php
                 include 'submitt.php';
