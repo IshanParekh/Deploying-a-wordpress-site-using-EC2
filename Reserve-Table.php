@@ -18,7 +18,7 @@
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "",
+		"name": "Site1",
 		"url": "index.html",
 		"logo": "images/default-logo.png"
 }</script>
@@ -36,7 +36,8 @@
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700; text-transform: uppercase;">
             <a class="u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-grey-90" href="#">
               <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
-6</symbol>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
 </defs></svg>
             </a>
           </div>
@@ -61,10 +62,11 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-text u-text-1">Reserve your table</h3>
         <div class="u-form u-form-1">
-          <!--<form name="form1" method="POST" action="scripts/info.php">-->
-          <!--<form action="scripts/form-f032.php" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px" source="customphp">-->
-          <form action="submitt.php" method="POST" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px" source="customphp">
+          <form action="submitt.php" method="POST" name="submit" tyid:class="u-clearfix u-form-custom-backend u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px" source="custom" redirect="true">
             <div class="u-form-group u-form-name u-form-group-1">
+              <?php
+                include 'submitt.php';
+              ?>
               <label for="name-3791" class="u-form-control-hidden u-label">Name</label>
               <input type="text" placeholder="Name" id="name-3791" name="name" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-1" required="">
             </div>
@@ -133,14 +135,11 @@
             </div>
             <div class="u-align-left u-form-group u-form-submit u-form-group-8">
               <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
-              <input type="submit" value="submit" class="u-form-control-hidden">
+              <button type="submit" value="submit" class="u-form-control-hidden">
             </div>
             <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>
             <div class="u-form-send-error u-form-send-message">#FormSendError</div>
             <input type="hidden" value="" name="recaptchaResponse">
-          </form>
-          <form action="submitt.php" method="get">
-            <input type="submit" value="Run me now!">
           </form>
         </div>
         <img src="images/download1.jfif" alt="" class="u-image u-image-default u-image-1" data-image-width="259" data-image-height="194">
