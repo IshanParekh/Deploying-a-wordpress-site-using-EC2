@@ -156,19 +156,23 @@
               <label for="phone-04af" class="u-form-control-hidden u-label">Phone</label>
               <input type="tel" name="phone" placeholder="Enter your mobile number" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-4" required="">
             </div>
-            <div class="u-form-group u-form-select u-form-group-5">
+            <div class="u-form-group u-form-phone u-form-group-5">
+              <label class="u-form-control-hidden u-label">Number of Customers</label>
+              <input type="text" name="noofcustomers" placeholder="Enter the Number of Customers" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-5" required="">
+            </div>
+            <div class="u-form-group u-form-select u-form-group-6">
               <label for="select-f09c" class="u-label">Select Your Restaurant</label>
               <div class="u-form-select-wrapper">
-                <select id="select-f09c" name="restaurantname" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-5" required="required" size="5">
+                <select id="select-f09c" name="restaurantname" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-6" required="required" size="5">
                   <option value="Cake and Candy">Cake and Candy</option>
                   <option value="Pizza House">Pizza House</option>
                 </select>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
               </div>
             </div>
-            <div class="u-form-group u-form-message u-form-group-6">
+            <div class="u-form-group u-form-message u-form-group-7">
               <label for="text-b567" class="u-form-control-hidden u-label"></label>
-              <textarea placeholder="PLEASE ENTER YOUR PREFERRED TIME:" id="text-b567" name="time" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-6"></textarea>
+              <textarea placeholder="PLEASE ENTER YOUR PREFERRED TIME: (For example 6 PM)" id="text-b567" name="time" class="u-border-grey-30 u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle u-text-black u-white u-input-7"></textarea>
             </div>
 <!-- <div class="u-form-group u-form-name u-form-group-1">
               <label for="name-3791" class="u-form-control-hidden u-label">Time</label>
@@ -219,7 +223,7 @@
             <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>
             <div class="u-form-send-error u-form-send-message">#FormSendError</div>
             <input type="hidden" value="" name="recaptchaResponse">
-            <input type="submit" value="Run me now!">
+            <!--input type="submit" value="Run me now!"-->
           </form>
         </div>
         <img src="images/download1.jfif" alt="" class="u-image u-image-default u-image-1" data-image-width="259" data-image-height="194" object-fit:cover >
